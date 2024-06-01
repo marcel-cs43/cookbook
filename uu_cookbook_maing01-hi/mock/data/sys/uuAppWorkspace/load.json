@@ -1,0 +1,148 @@
+{
+  "data": {
+    "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+    "name": "The best IT jokes",
+    "state": "underConstruction",
+    "relatedObjectsMap": {},
+    "sys": { "cts": "2019-03-19T14:59:43.847Z", "mts": "2022-05-04T11:50:42.830Z", "rev": 34 },
+    "categoryList": [
+      {
+        "name": "Superbowl",
+        "icon": "mdi-label",
+        "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+        "sys": {
+          "cts": "2019-10-29T11:27:09.671Z",
+          "mts": "2020-06-12T13:39:48.816Z",
+          "rev": 5
+        },
+        "id": "5db8220d008c44000d6997b2"
+      },
+      {
+        "name": "Personální",
+        "icon": "mdi-account",
+        "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+        "sys": {
+          "cts": "2019-10-24T12:56:58.994Z",
+          "mts": "2020-01-13T15:21:08.706Z",
+          "rev": 3
+        },
+        "id": "5db19f9b008c44000d6995d5"
+      },
+      {
+        "name": "Kamenaky",
+        "icon": "mdi-label",
+        "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+        "sys": {
+          "cts": "2020-06-09T09:30:32.491Z",
+          "mts": "2020-06-09T09:30:32.491Z",
+          "rev": 0
+        },
+        "id": "5edf56b81d5ce800255e70f7"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "mdi-language-javascript",
+        "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+        "sys": {
+          "cts": "2019-03-20T12:53:21.237Z",
+          "mts": "2019-09-18T10:08:32.212Z",
+          "rev": 1
+        },
+        "id": "5c9237c1323cc0000c30302e"
+      },
+      {
+        "name": "IT",
+        "icon": "mdi-label",
+        "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+        "sys": {
+          "cts": "2019-03-20T12:52:48.426Z",
+          "mts": "2020-03-10T15:55:26.131Z",
+          "rev": 5
+        },
+        "id": "5c9237a0323cc0000c303028"
+      },
+      {
+        "name": "Food",
+        "icon": "mdi-account-arrow-right",
+        "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+        "sys": {
+          "cts": "2019-06-03T15:04:19.531Z",
+          "mts": "2020-06-10T10:59:47.659Z",
+          "rev": 3
+        },
+        "id": "5cf536f3323cc0000c3035cf"
+      },
+      {
+        "name": "Family",
+        "icon": "mdi-account-arrow-left-outline",
+        "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+        "sys": {
+          "cts": "2019-05-16T14:27:21.595Z",
+          "mts": "2020-06-13T16:50:02.036Z",
+          "rev": 11
+        },
+        "id": "5cdd7349323cc0000c30327e"
+      }
+    ]
+  },
+  "sysData": {
+    "asidData": {
+      "asid": "1ebf79d54d2e4e91a58b1376117fa623",
+      "oidcClientMap": { "oidcg02": "1ebf79d54d2e4e91a58b1376117fa623" },
+      "asidRuntimeMode": { "mode": "standard", "startTime": "2019-07-12T08:04:13.947Z" },
+      "version": "3.0",
+      "name": "",
+      "description": "",
+      "baseRegistryUri": "",
+      "sysState": "active",
+      "adviceNote": {
+        "message": "Migration to version 3.0",
+        "severity": "info",
+        "estimatedEndTime": "2018-06-21T10:15:30.000Z",
+        "uuIdentity": "6565-1",
+        "startTime": "2021-11-15T15:40:04.550Z"
+      },
+      "sys": { "cts": "2020-12-29T12:41:23.059Z", "mts": "2022-04-05T12:54:41.951Z", "rev": 6 },
+      "id": "5feb23f31363be00257e25dc",
+      "uuAppErrorMap": {}
+    },
+    "awidData": {
+      "awid": "4ef6a7b01b5942ecbfb925b249af987f",
+      "version": "3.0",
+      "authorizationStrategy": "artifact",
+      "sys": { "cts": "2019-03-19T14:58:23.292Z", "mts": "2021-11-15T15:40:09.993Z", "rev": 7 },
+      "artifactUri": "https://uuapp.plus4u.net/uu-businessterritory-maing01/de03d1a9b0a342b399dbeacbce137869?id=5e725dc5f2cf7e001b550670",
+      "adviceNote": {
+        "uuIdentity": "6565-1",
+        "startTime": "2021-11-15T15:40:09.993Z",
+        "severity": "info",
+        "message": null,
+        "estimatedEndTime": null
+      },
+      "awidLicense": "",
+      "awidLicenseOwnerList": ["23-8393-1"],
+      "description": "",
+      "name": "",
+      "sysState": "active",
+      "awidRuntimeMode": { "mode": "standard", "adviceNote": null, "startTime": null, "estimatedEndTime": null },
+      "oidcClientMap": { "oidcg02": "4ef6a7b01b5942ecbfb925b249af987f" },
+      "uuAppErrorMap": {},
+      "id": "5c91038f323cc0000c302fff"
+    },
+    "relatedObjectsMap": {
+      "uuAppUuFlsBaseUri": "https://uuapp.plus4u.net/uu-flsg01-main/8014eb79e8184ebb8942d96ce37b61b4/",
+      "uuAppUuSlsBaseUri": "https://uuapp.plus4u.net/uu-sls-maing01/3c440c47fc1f4ba4bc78e64f571835dc/",
+      "uuAppBusinessRequestsUri": "https://uuapp.plus4u.net/uu-bookkit-maing01/a04c8463649b425fb8b46076c0c5e5d0/",
+      "uuAppBusinessModelUri": "https://uuapp.plus4u.net/uu-bookkit-maing01/a129e74e3bcc4fe4a4a95f5e4bb494ed/",
+      "uuAppApplicationModelUri": "https://uuapp.plus4u.net/uu-bookkit-maing01/71f8d7b5cfdc4336b0abfe47b3cb237b/",
+      "uuAppUserGuideUri": "https://uuapp.plus4u.net/uu-bookkit-maing01/233edf4ed51e4c0eb0c2caad2c270e8a/",
+      "uuAppWebKitUri": "https://uuapp.plus4u.net/uu-webkit-maing02/7c9a436a0eef4c2a810a680d8de65b65/",
+      "uuAppProductPortalUri": "https://uuapp.plus4u.net/uu-dockit-maing02/d112828dcd1445e2a916cdd59331a359/document?documentId=5fb577cf1d97660025f9023b"
+    },
+    "profileData": {
+      "uuIdentityProfileList": ["Authorities", "Executives", "Readers"],
+      "profileList": ["Authorities", "Executives", "Readers"]
+    }
+  },
+  "uuAppErrorMap": {}
+}

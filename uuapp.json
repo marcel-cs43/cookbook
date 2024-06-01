@@ -1,0 +1,19 @@
+{
+  "product": "uu_cookbook_maing01",
+  "version": "0.1.0",
+  "license": "License Commercial",
+  "description": {
+    "en": "",
+    "cs": ""
+  },
+  "devkit": {
+    "development": {
+      "uuCloudUniverseBaseUri": "----- VALUE REQUIRED -----",
+      "uuCloudLogStoreBaseUri": "----- VALUE REQUIRED -----",
+      "uuAppBoxRegistryBaseUri": "----- VALUE REQUIRED -----"
+    }
+  },
+  "uu_cookbook_maing01-hi": {},
+  "uu_cookbook_maing01-server": {},
+  "uu_cookbook_maing01-uuscriptlib": {}
+}
