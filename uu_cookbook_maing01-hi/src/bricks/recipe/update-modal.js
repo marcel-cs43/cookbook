@@ -1,7 +1,8 @@
-import { createVisualComponent, PropTypes } from "uu5g05";
+import { createVisualComponent, PropTypes, Utils } from "uu5g05";
 import { Modal } from "uu5g05-elements";
 import { Form, FormText, FormTextArea, FormSelect, FormFile, SubmitButton, CancelButton } from "uu5g05-forms";
 import Config from "./config/config";
+import { useAlertBus } from "uu5g05-elements";
 
 //@@viewOn:css
 const Css = {
@@ -40,21 +41,29 @@ export const UpdateModal = createVisualComponent({
 
   render(props) {
     //@@viewOn:private
-
+    const { addAlert } = useAlertBus();
     async function handleSubmit(event) {
       const values = { ...event.data.value };
 
-      if (props.recipeDataObject.data.image && !values.image) {
+      if (props.recipeDataObject?.data.image && !values.image) {
         delete values.image;
         values.deleteImage = true;
       }
 
-      return props.onSubmit(props.recipeDataObject, values);
-    }
+      const result = await props.onSubmit(props.recipeDataObject, values);
 
+      addAlert({
+        message: Utils.String.format("Recipe updated: {0}", values.name),
+        priority: "success",
+        durationMs: 2000,
+      });
+
+      return result;
+    }
+  
     function handleValidate(event) {
       const { text, image } = event.data.value;
-
+  
       if (!text && !image) {
         return {
           message: "Please provide either text or image.",
@@ -62,8 +71,12 @@ export const UpdateModal = createVisualComponent({
       }
     }
     //@@viewOff:private
-
+  
     //@@viewOn:render
+    if (!props.recipeDataObject) {
+      return null; // or return a loading state
+    }
+  
     const recipe = props.recipeDataObject.data;
 
     const formControls = (

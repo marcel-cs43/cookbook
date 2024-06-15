@@ -7,6 +7,9 @@
   "namespace": "UuCookbook",
   "spec": "uu5-app; uu_appg01_devkit@5.22.0",
   "dependencies": {
+    "chromedriver": "^125.0.3",
+    "mocha": "10.4.0",
+    "selenium-webdriver": "^4.21.0",
     "uu_plus4u5g02": "^1.0.0",
     "uu_plus4u5g02-app": "^1.0.0",
     "uu_plus4u5g02-elements": "^1.0.0",
