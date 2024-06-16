@@ -75,7 +75,6 @@ function InfoLine({ children }) {
 }
 
 function buildCategoryNames(categoryIdList, categoryList) {
-  // for faster lookup
   let categoryIds = new Set(categoryIdList);
   return categoryList
     .reduce((acc, category) => {
@@ -113,7 +112,7 @@ const DetailModal = createVisualComponent({
     //@@viewOn:private
     function getActions() {
       const isActionDisabled = props.recipeDataObject.state === "pending";
-      const canManage = true; // Assuming always true since permissions are removed.
+      const canManage = true;
       let actionList = [];
 
       if (canManage) {

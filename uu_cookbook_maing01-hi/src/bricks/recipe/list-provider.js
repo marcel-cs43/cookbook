@@ -70,11 +70,7 @@ const ListProvider = createComponent({
     }
 
     useEffect(() => {
-      // We don't use it to store reference on another React component
-      // eslint-disable-next-line uu5/hooks-exhaustive-deps
       return () => imageUrlListRef.current.forEach((url) => URL.revokeObjectURL(url));
-      // We want to trigger this effect only once.
-      // eslint-disable-next-line uu5/hooks-exhaustive-deps
     }, []);
     //@@viewOff:private
 

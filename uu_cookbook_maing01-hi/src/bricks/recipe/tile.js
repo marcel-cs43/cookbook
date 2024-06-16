@@ -106,7 +106,6 @@ const Tile = createVisualComponent({
     //@@viewOn:render
     const { elementProps } = Utils.VisualComponent.splitProps(props, Css.main());
     const recipe = recipeDataObject.data;
-    // Allow all users to manage recipes
     const canManage = true;
     const isActionDisabled = recipeDataObject.state === "pending";
 

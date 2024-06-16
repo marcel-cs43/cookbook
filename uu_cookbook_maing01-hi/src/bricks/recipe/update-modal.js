@@ -74,7 +74,7 @@ export const UpdateModal = createVisualComponent({
   
     //@@viewOn:render
     if (!props.recipeDataObject) {
-      return null; // or return a loading state
+      return null;
     }
   
     const recipe = props.recipeDataObject.data;
