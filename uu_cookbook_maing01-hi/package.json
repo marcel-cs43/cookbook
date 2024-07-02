@@ -27,6 +27,9 @@
     "externals": {}
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.2.0",
+    "@testing-library/react": "^16.0.0",
+    "jest": "^29.7.0",
     "uu_appg01_devkit": "^5.22.0",
     "uu5g05-test": "^1.0.0"
   },

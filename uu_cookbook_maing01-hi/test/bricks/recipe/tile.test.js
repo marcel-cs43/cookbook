@@ -1,17 +1,57 @@
-import UuCookbook from "uu_cookbook_maing01-hi";
-import { testProperties } from "uu5g05-test";
+import { render, fireEvent } from "@testing-library/react";
+import '@testing-library/jest-dom';
+import Tile from "../../../src/bricks/recipe/tile.js";
 
-const CONFIG = {
-  props: {
-    // left: {
-    //   values: ["Left as text", <span key="l">Left as JSX</span>, 0],
-    // },
-  },
-  requiredProps: {
-    // children: "Children content",
-  },
-};
+describe("Tile component", () => {
+  const mockData = {
+    data: {
+      name: "Test Recipe",
+      text: "This is a test recipe.",
+      averageRating: 4.5,
+      imageUrl: "http://example.com/image.jpg",
+      image: true,
+    },
+    state: "ready",
+    handlerMap: {
+      getImage: jest.fn(),
+    },
+  };
 
-describe(`UuCookbook.Bricks.Recipe.Tile`, () => {
-  testProperties(UuCookbook.Bricks.Recipe.Tile, CONFIG);
+  const mockUpdate = jest.fn();
+  const mockDelete = jest.fn();
+  const mockDetail = jest.fn();
+
+  function renderTile(props = {}) {
+    return render(
+      <Tile
+        data={mockData}
+        onUpdate={mockUpdate}
+        onDelete={mockDelete}
+        onDetail={mockDetail}
+        {...props}
+      />
+    );
+  }
+
+  test("renders Tile with basic content", () => {
+    const { getByText } = renderTile();
+    expect(getByText("Test Recipe")).toBeInTheDocument();
+  });
+  test("handles detail click", () => {
+    const { getByText } = renderTile();
+    fireEvent.click(getByText("Test Recipe"));
+    expect(mockDetail).toHaveBeenCalledWith(mockData);
+  });
+  test("handles update click", () => {
+    const { container } = renderTile();
+    const updateButton = container.querySelector('[data-testid="icon"].mdi-pencil');
+    fireEvent.click(updateButton);
+    expect(mockUpdate).toHaveBeenCalledWith(mockData);
+  });
+  test("handles delete click", () => {
+    const { container } = renderTile();
+    const deleteButton = container.querySelector('[data-testid="icon"].mdi-delete');
+    fireEvent.click(deleteButton);
+    expect(mockDelete).toHaveBeenCalledWith(mockData);
+  });
 });

@@ -27,7 +27,7 @@ const Css = {
       display: "block",
       marginLeft: 24,
       marginRight: 24,
-      marginTop: 16,
+      
       marginBottom: 16,
     }),
 
